@@ -164,7 +164,7 @@ public class GuacamoleInstruction {
 
         for (int i=0; i<args.length; i++) {
             buff.append(',');
-            buff.append(args[i].length());
+            buff.append(args[i].getBytes().length);
             buff.append('.');
             buff.append(args[i]);
         }
